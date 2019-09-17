@@ -1,0 +1,8 @@
+seed: 29179114
+worlds:
+  - world
+  - world_nether
+  - world_the_end
+cooldown: 60
+combinelevel: 45
+broadcastachievements: true

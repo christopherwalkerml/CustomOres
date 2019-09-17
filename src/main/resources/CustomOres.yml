@@ -1,0 +1,195 @@
+#You can make your own ores, or edit the current ore settings.
+#format must be followed
+#
+#
+#Name: (NAMES MUST BE UNIQUE)
+#  oreid: Integer (From 0 - 127 NO HIGHER. IDs must be unique. If you remove oreid 0, you cant use oreid 0 again!!!)
+#  ylevel:
+#    min: Integer   (Minimum y value for the ore to spawn at)
+#    max: Integer   (Maximum y value for the ore to spawn at)
+#  size:
+#   frequency: Integer    (Amount of veins per chunk)
+#   veinsize: Integer     (Size of ore vein)
+#  textures:
+#   id: UUID    (player UUID for skull texture)
+#   textures: texture URL   (URL to texture on minecraft.net)
+#  blocks: [BLOCKTYPE, BLOCKTYPE, ...]    (List of blocks that the ore can generate on)
+#  colour: ChatColor    (The colour of the item display name)
+#  blastresistant: Boolean    (whether or not the ore is immune to explosions)
+#  worlds: [WORLD, WORLD2, ...]    (which worlds the ore spawns in. Remember to enable the world in config.yml too)
+#  requiredtool: Integer (corresponds to the tiered tools at the bottom of the file)
+#
+#
+#If ores are added to this list, only chunks that haven't been generated will have the new ores
+#
+#If ores are removed from this list, they will be removed from world generation, but all ore
+#items will remain in player inventories
+#
+#
+#If these files are changed, a full restart of the server must occur before all the changes will be made.
+#DO NOT RELOAD THE SERVER if you edit the CustomOresPlus files. Unexpected results could occur
+#
+
+ores:
+  Copper:
+    oreid: 0
+    ylevel:
+      min: 20
+      max: 80
+    size:
+      frequency: 8
+      veinsize: 12
+    texture:
+      id: e76ac8a6-258b-320e-84c8-835ac9a33bca
+      textures: http://textures.minecraft.net/texture/56eff93f845db9926033a1e4d4c1dba712f039cb0970ff24b6aba87905f1b4ec
+    blocks: [STONE, DIORITE, GRANITE, ANDESITE]
+    colour: YELLOW
+    blastresistant: false
+    worlds: [world]
+    requiredtool: 0
+  Silver:
+    oreid: 1
+    ylevel:
+      min: 15
+      max: 60
+    size:
+      frequency: 6
+      veinsize: 9
+    texture:
+      id: dcc16676-e31c-398b-af88-41ad0de0c848
+      textures: http://textures.minecraft.net/texture/4bb6b15d084b2574e2df60c1ecd90b4dc0b32777966eb8c5927460d06ed7df90
+    blocks: [STONE, DIORITE, GRANITE, ANDESITE]
+    colour: WHITE
+    blastresistant: false
+    worlds: [world]
+    requiredtool: 1
+  Cobalt:
+    oreid: 2
+    ylevel:
+      min: 10
+      max: 50
+    size:
+      frequency: 4
+      veinsize: 7
+    texture:
+      id: 89a9683c-1e91-31c3-8aac-3a3fc8da7918
+      textures: http://textures.minecraft.net/texture/e1cf0d4c275f86d4430b9954a851951494f45c9aa1e05bd2fcf13ef33c993da
+    blocks: [STONE, DIORITE, GRANITE, ANDESITE]
+    colour: BLUE
+    blastresistant: false
+    worlds: [world]
+    requiredtool: 2
+  Agrellite:
+    oreid: 3
+    ylevel:
+      min: 8
+      max: 40
+    size:
+      frequency: 3
+      veinsize: 5
+    texture:
+      id: 11ba1d77-b6af-37f8-a2d5-47334696178
+      textures: http://textures.minecraft.net/texture/1beed3fd36a0311b1714d24b3c80f75c823444927650be9e808eaf10b29fd42b
+    blocks: [STONE, DIORITE, GRANITE, ANDESITE]
+    colour: DARK_PURPLE
+    blastresistant: false
+    worlds: [world]
+    requiredtool: 3
+  Ammolite:
+    oreid: 4
+    ylevel:
+      min: 5
+      max: 30
+    size:
+      frequency: 3
+      veinsize: 3
+    texture:
+      id: 7d6fa7fd-2b2c-3a34-ae80-0286f66176acc
+      textures: http://textures.minecraft.net/texture/c3687e25c632bce8aa61e0d64c24e694c3eea629ea944f4cf30dcfb4fbce071
+    blocks: [STONE, DIORITE, GRANITE, ANDESITE]
+    colour: RED
+    blastresistant: true
+    worlds: [world]
+    requiredtool: 4
+  Chalcanthite:
+    oreid: 5
+    ylevel:
+      min: 3
+      max: 15
+    size:
+      frequency: 2
+      veinsize: 3
+    texture:
+      id: 7b5c8cc6-6ebb-3bce-98e3-666a57b8109f
+      textures: http://textures.minecraft.net/texture/e6799bfaa3a2c63ad85dd378e66d57d9a97a3f86d0d9f683c498632f4f5c
+    blocks: [STONE, DIORITE, GRANITE, ANDESITE, DIRT]
+    colour: AQUA
+    blastresistant: true
+    worlds: [world]
+    requiredtool: 5
+  Titanite:
+    oreid: 6
+    ylevel:
+      min: 1
+      max: 8
+    size:
+      frequency: 3
+      veinsize: 1
+    texture:
+      id: b90c7e1f-1ddf-3e66-b441-08f3773ed41f
+      textures: http://textures.minecraft.net/texture/96c8447a8b6b0e0c7e7629c6898ec9c749a7a0a2b452b9c3852c7847bb4dc5
+    blocks: [STONE, DIORITE, GRANITE, ANDESITE, DIRT]
+    colour: GREEN
+    blastresistant: true
+    worlds: [world]
+    requiredtool: 6
+  Beryllite:
+    oreid: 7
+    ylevel:
+      min: 1
+      max: 80
+    size:
+      frequency: 2
+      veinsize: 3
+    texture:
+      id: 46ab6a75-6e0d-43ad-9571-cb45308431c4
+      textures: http://textures.minecraft.net/texture/d500292f4afe52d10f299dfb26036322830450331e003084bb220333530664e1
+    blocks: [NETHERRACK]
+    colour: DARK_RED
+    blastresistant: true
+    worlds: [world_nether]
+    requiredtool: 7
+  Draconite:
+    oreid: 8
+    ylevel:
+      min: 12
+      max: 30
+    size:
+      frequency: 2
+      veinsize: 1
+    texture:
+      id: 5a10bab7-bfbc-4b51-a341-a9d01b050b98
+      textures: http://textures.minecraft.net/texture/21c96750f537e58a5988042a622dc1fcbebbc5cbbaf49357dacb764b3b916
+    blocks: [END_STONE]
+    colour: LIGHT_PURPLE
+    blastresistant: false
+    worlds: [world_the_end]
+    requiredtool: 8
+
+#
+#FORMAT
+#tools:
+#  tier: (tiers must be unique Integer) Name
+#
+# ALWAYS HAVE 0. 0 is no specified tool, and is required
+#
+tools:
+  0: 'null'
+  1: '&6Copper Pickaxe'
+  2: 'Silver Pickaxe'
+  3: '&9Cobalt Pickaxe'
+  4: '&5Agrellite Pickaxe'
+  5: '&cAmmolite Pickaxe'
+  6: '&bChalcanthite Pickaxe'
+  7: '&aTitanite Pickaxe'
+  8: '&4Red Beryl Pickaxe'

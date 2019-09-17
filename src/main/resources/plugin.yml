@@ -1,0 +1,40 @@
+name: CustomOresPlus
+version: 1.8.9
+author: Darkolythe
+main: me.darkolythe.customoresplus.CustomOresPlus
+api-version: 1.14
+description: This plugin spawns custom ores around the world naturally, all customizable in the config
+
+commands:
+  customoresplus:
+    usage: /<command>
+    aliases: [cop]
+    description: the customoresplus base command
+    permission: customoresplus.command
+    permission-message: You do not have permission!
+
+permissions:
+  customoresplus.toggledraw:
+    description: Allows the use of customoresplus commands
+    default: true
+  customoresplus.create:
+    description: Creates ore at the user's location
+    default: op
+  customoresplus.item:
+    description: Allows the creation of custom items
+    default: op
+  customoresplus.book:
+    description: Allows the giving of the core compendium
+    default: op
+  customoresplus.recipeadmin:
+    description: Allows the creation and removal of custom recipes
+    default: op
+  customoresplus.recipe:
+    description: Allows the creation and removal of custom recipes
+    default: op
+  customoresplus.command:
+    description: basic command permission
+    default: true
+  customoresplus.advancementadmin:
+    description: Allows the editing of advancements
+    default: op
