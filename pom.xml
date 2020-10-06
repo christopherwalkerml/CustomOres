@@ -6,7 +6,7 @@
 
     <groupId>me.Darkolythe</groupId>
     <artifactId>OreChunksPlus</artifactId>
-    <version>1.8.9</version>
+    <version>1.8.10</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -44,7 +44,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.3.1</version>
                 <configuration>
-                    <outputDirectory>C:\Users\Chris Walker\Desktop\1.14server\plugins</outputDirectory>
+                    <outputDirectory>C:\Users\ChrisWalker\Desktop\legacy-minecraft-servers\1.14server\plugins</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>

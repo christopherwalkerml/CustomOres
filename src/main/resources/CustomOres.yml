@@ -104,7 +104,7 @@ ores:
       frequency: 3
       veinsize: 3
     texture:
-      id: 7d6fa7fd-2b2c-3a34-ae80-0286f66176acc
+      id: 7d6fa7fd-2b2c-3a34-ae80-0286f66176ac
       textures: http://textures.minecraft.net/texture/c3687e25c632bce8aa61e0d64c24e694c3eea629ea944f4cf30dcfb4fbce071
     blocks: [STONE, DIORITE, GRANITE, ANDESITE]
     colour: RED
@@ -193,3 +193,4 @@ tools:
   6: '&bChalcanthite Pickaxe'
   7: '&aTitanite Pickaxe'
   8: '&4Red Beryl Pickaxe'
+  9: '&d&lDraconite Pickaxe'

@@ -49,7 +49,6 @@ public class RepairListener implements Listener {
                                             doSwitch = true;
                                             ((Damageable) m).setDamage(((Damageable) m).getDamage() - 10);
                                             player.setLevel(player.getLevel() - 1);
-                                            System.out.println(player.getTotalExperience());
                                         }
                                     }
                                 }

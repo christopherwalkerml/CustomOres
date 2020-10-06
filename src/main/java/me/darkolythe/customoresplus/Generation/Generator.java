@@ -17,7 +17,7 @@ public class Generator {
     }
 
     /*
-    loops through all the ores and tries to spawn chunks for each ore by generating veins equal to those specified in the CustomOres.yml
+    loops through all the ores and tries to spawn chunks for each ore by generating veins equal to those specified in the inv
      */
     public void generateOres(Chunk chunk) {
         List<CustomOre> customores = new ArrayList<>();

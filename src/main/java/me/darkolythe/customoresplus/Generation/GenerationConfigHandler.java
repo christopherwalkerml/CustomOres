@@ -169,7 +169,7 @@ public class GenerationConfigHandler {
         if (ores != null) {
             for (CustomOre ore : ores) {
                 try {
-                    stream.writeByte(main.genmain.getOreData(ore.type).oreid);
+                    stream.writeByte(main.genmain.getOreData(ore.type).oreid); // <- 1 byte
                     byte packed_xz = (byte) ((ore.x << 4) | ore.z);
                     stream.writeByte(packed_xz); //this has a max value of 15
                     stream.writeByte(ore.y);

@@ -122,7 +122,7 @@ public class MainTools {
         /*
         Add recipe for refinery tier I
          */
-        ShapedRecipe refineryT1Recipe = new ShapedRecipe(new NamespacedKey(main, "Refinery_Mark_I") ,main.refinerymain.refineryT1);
+        ShapedRecipe refineryT1Recipe = new ShapedRecipe(new NamespacedKey(main, "refinery_mark_i") ,main.refinerymain.refineryT1);
         refineryT1Recipe.shape("CCC", "FSW", "CCC");
         refineryT1Recipe.setIngredient('C', Material.COBBLESTONE);
         refineryT1Recipe.setIngredient('F', Material.FURNACE);

@@ -1,6 +1,5 @@
 package me.darkolythe.customoresplus;
 
-import me.darkolythe.customoresplus.Achievements.AdvancementData;
 import me.darkolythe.customoresplus.Generation.OreData;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

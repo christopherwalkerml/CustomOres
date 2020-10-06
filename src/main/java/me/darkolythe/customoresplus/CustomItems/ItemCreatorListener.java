@@ -421,9 +421,9 @@ public class ItemCreatorListener implements Listener {
                                             if (book.getItemMeta().hasLore()) {
                                                 for (String l : book.getItemMeta().getLore()) {
                                                     if (l.contains("Requires " + main.itemmain.combinelevel + " levels to combine in an anvil")) {
-                                                        if (player.getExpToLevel() >= 45) {
+                                                        if (player.getExpToLevel() >= main.itemmain.combinelevel) {
                                                             player.setItemOnCursor(inv.getItem(2));
-                                                            player.setLevel(player.getLevel() - 45);
+                                                            player.setLevel(player.getLevel() - main.itemmain.combinelevel);
                                                             inv.getItem(0).setAmount(inv.getItem(0).getAmount() - 1);
                                                             inv.getItem(1).setAmount(inv.getItem(1).getAmount() - 1);
                                                             inv.getItem(2).setAmount(inv.getItem(2).getAmount() - 1);
